@@ -1,0 +1,262 @@
+.container{
+    display: flex;
+    background-color: black;
+}
+
+.wrapper{
+    background-color: white;
+    width: 100%;
+} 
+
+/* This is for toggle switch */
+
+input[type ="checkbox"].toggle{
+    display: none;
+}
+
+input[type ="checkbox"].toggle + label{
+    display: block;
+    width: 45px;
+    height: 19px;
+    background:whitesmoke;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer
+}
+
+input[type ="checkbox"].toggle + label::before{
+    position: absolute;
+    content: "";
+    display:block;
+    width: 16px;
+    height:16px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1px;
+}
+
+input[type ="checkbox"].toggle:checked + label{
+    background:grey;
+}
+
+input[type ="checkbox"].toggle:checked + label::before{
+    left: 28px;
+}
+
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: black;
+}
+
+
+
+.title1{
+    width: 129px;
+    position: absolute;
+    height: 29px;
+    top: 50px;
+    left: 52px;
+}
+
+.form-control1{
+    position: absolute;
+    width: 590px;
+    height: 41px;
+    top: 80px;
+    left: 55px;
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 1) ;
+}
+
+.title2{
+    position: absolute;
+    width: 133px;
+    height: 29px;
+    top: 160px;
+    left: 55px;
+}
+
+select{
+    width: 590px;
+    height: 41px;
+    position: absolute;
+    top: 190px;
+    left: 58px;
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 1) ;
+}
+
+.title3{
+    width: 108px;
+    height: 29px;
+    top: 270px;
+    left: 58px;
+    position: absolute;
+}
+
+textarea{
+    position: absolute;
+    width: 590px;
+    height: 163px;
+    top: 300px;
+    left: 61px;
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 1) ;
+}
+
+.title4{
+    position: absolute;
+    width: 289px;
+    height: 29px;
+    top: 520px;
+    left: 61px;
+}
+
+
+.flex-button{
+    position: absolute;
+    width: 590px;
+    height: 32px;
+    top: 550px;
+    left: 64px;
+    border-radius: 10px;
+    display: flex;
+    border-width: 1px;
+    border-spacing: 591px;
+    border-style: solid;
+    padding: 3px;
+    border: 1px solid rgba(128, 128, 128, 1) ;
+}
+
+input.flex-button1{
+    width: 80px;
+    height: 33px;
+    border: none;
+    background: transparent;
+    outline: 0px;
+    position: relative;
+    left: 10px;
+    font-weight: 400;
+}
+
+input.flex-button2{
+    width: 471px;
+    height: 33px;
+    border:none;
+    background: transparent;
+}
+
+.flex-button button{
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    background: transparent;
+    top: -4px;
+    position: relative;
+    right: -4px;
+    border-bottom-width: 1px;
+    cursor: pointer;
+    border: 1px solid rgba(128, 128, 128, 1) ;
+}
+
+.form-control2{
+    display: flex;
+    position: relative;
+    width: 590px;
+    height: 41px;
+    top: 80px;
+    right: -50px;
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 1) ;
+}
+
+
+
+.increment{
+    width: 100px;
+    height: 34px;
+    top: 110px;
+    right: -50px;
+    position: relative;
+    border-radius: 10px;
+    background: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-width: 1px;
+    border-spacing: 591px;
+    border-style: solid;
+    padding: 3px;
+    cursor: pointer;
+    border: 1px solid rgba(128, 128, 128, 1) ;
+}
+
+.increment span{
+    width: 90%;
+    text-align: center;
+}
+
+.box{
+    position: relative;
+    top: 163px;
+    right: -50px;
+    margin: 10px;
+    width: 100%;
+}
+
+.checkbox{
+    width: 100%;
+    position: relative;
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    top: 0px;
+    gap: 5px;
+}
+
+.radio-button{
+    width: 100%;
+    position: relative;
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    top: 10px;
+    gap: 5px;
+}
+
+.slide-button{
+    width: 50%;
+    position: relative;
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    top: 25px;
+    gap: 5px;
+    
+}
+
+.left{
+    width: 50%;
+    height: 100vh;
+}
+.right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.required::after {
+    content: "*";
+    color: red;
+    margin-left:2px
+  }

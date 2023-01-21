@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1></h1>
+    <form action="#" method="post">
+        <div class="container">
+            <div class="wrapper left">
+                <div class="control">
+                    <label class="title1" for="name">Text Field<span class="required"></span></label><br>
+                    <input class ="form-control1" type="text" name="name" placeholder="Input Text">
+                </div>
+        
+                <div class="control">
+                    <label class="title2" for="select-field">Select Field<span class="required"></span></label><br>
+                    <select name="state" id="state">
+                        <option value="" aria-placeholder="Select">Select</option>
+                        <option value="Uttar Pradesh" aria-placeholder="Select">Uttar Pradesh</option>
+                        <option value="Odisha" aria-placeholder="Select">Odisha</option>
+                        <option value="Tamil Nadu" aria-placeholder="Select">Tamil Nadu</option>
+                        <option value="Kerela" aria-placeholder="Select">Kerela</option>
+                    </select>
+                </div>
+        
+                <div class="control">
+                    <label class="title3" for="text-area">Text Area<span class="required-field"></span></label><br>
+                    <textarea rows="7"
+                          cols="50"
+                          name="comment"
+                          required>
+                    </textarea>
+                </div>
+        
+                <div class="control">
+                    <label class="title4" for="text-field">Text Field with Add-ons<span class="required-field"></span></label>
+                    <div class="flex-button">
+                        <input type="text" name="" placeholder="Label" class="flex-button1">
+                        <input type="text" name="" placeholder="Input Text" class="flex-button2">
+                        <button>Button</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- right half begins -->
+            <div class="wrapper right">
+                <div class="search-box">
+                    <input class ="form-control2" type="text" name="search-bar" placeholder="Search">   
+                </div>
+
+                <div class="increment">
+                    <span class="minus">-</span>
+                    <span class="num">1</span>
+                    <span class="plus">+</span>
+                </div>
+
+                <div class="box">
+                    <div class="checkbox">
+                        <input type="checkbox" name="checkbox" value="Checkbox"/> Checkbox
+                    </div>
+    
+                    <div class="radio-button">
+                        <input type="radio" name="radio" value="Radio Button"/> Radio Button
+                    </div>
+    
+                    <div class="slide-button">
+                        <input type="checkbox" id="slider" class="toggle">
+                        <label for="slider"></label>
+                        <label for="checkbox">Switch</label>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+       
+    </form>
+</body>
+</html>
